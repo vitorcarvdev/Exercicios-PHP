@@ -15,7 +15,7 @@
     $NumDois = $_POST['SegundoNum'] ?? null;
     $NumOperacoes = $_POST['operacoes'] ?? null;
     $Resultado = 0;
-    
+
     if ($NumOperacoes == 'soma') {
         $Resultado = $NumUm + $NumDois;
       } elseif($NumOperacoes == 'subtracao') {
@@ -49,14 +49,9 @@
         </form>
 
         <div id="faixa-resultado"  style="text-align:center; color:#fff; margin:20px auto;">
-            <?php echo "O resultado da " . $teste . " é = " . $Resultado; ?>
+            <?php echo "O resultado da " . $NumOperacoes . " é = " . $Resultado; ?>
         </div>
-
-        
-
-    </div>
-        
+    </div>    
 </div>
-
 </body>
 </html>
