@@ -15,8 +15,7 @@
     $NumDois = $_POST['SegundoNum'] ?? null;
     $NumOperacoes = $_POST['operacoes'] ?? null;
     $Resultado = 0;
-    $teste = $_POST['operacoes'] ?? null;
-
+    
     if ($NumOperacoes == 'soma') {
         $Resultado = $NumUm + $NumDois;
       } elseif($NumOperacoes == 'subtracao') {
