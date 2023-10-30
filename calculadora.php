@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculadora</title>
+<meta name="keywords" content="calculadora simples online, calculadora online, colculadora responsiva">
 <script src="js/script.js"></script>
 <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
@@ -30,9 +31,9 @@
 ?>
 
 <div id="conteudo">
-    <h1>Minha ordem de estudos</h1>
+    <h1>Calculadora Online</h1>
 
-    <p>Estudo tudo sobre os assuntos abaixo, até executar a tarefa e as varições dentro dela<br/> este é o <a href="https://www.php.net/manual/en/index.php" target="_blank">manual do PHP</a> | <a href="index.php">Voltar</a></p>
+    <p>Olá, estou disponibilizando esta calculadora online para que você possa usar gratuitamente</br> em caso de melhorias por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/><br/> <a href="https://www.php.net/manual/en/index.php" target="_blank">Manual do PHP</a> | <a href="index.php">Voltar para o Início</a></p>
 
     <div id="faixa-exercicio">
         <form id="form-caculadora" method="post" style="text-align:center;">

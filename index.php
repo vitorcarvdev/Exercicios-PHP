@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Estudo PHP</title>
+<meta name="keywords" content="sistema em php, sistema gratuito em php, desenvolvedor php">
 <script src="js/script.js"></script>
 <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
@@ -13,9 +14,12 @@
 <div id="conteudo">
     <h1>Minha ordem de estudos</h1>
 
-    <p>Estudo tudo sobre os assuntos abaixo, até executar a tarefa e as varições dentro dela<br/> este é o <a href="https://www.php.net/manual/en/index.php" target="_blank">manual do PHP</a> | <a href="index.php">Voltar</a></p>
+    <p>A meta é estudar tudo sobre o assunto PHP e se há como melhorar algo, vou fazer!<br/>em caso de melhorias por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/>
         <ul id="menu">
-            <li><a href="calculadora.php">Calculadora Soma</a></li>
+            <li><a href="calculadora.php">Calculadora</a></li>
+            <li><a href="lojatintas.php">Loja de Tintas</a></li>
+            <li><a href="#">Loja de Tintas</a></li>
+            <li><a href="#">Conversor de Dolar</a></li>
             <li><a href="#">Agenda de contato (Nome e tel)</a></li>
             <li><a href="#">Autenticação de usuários</a></li>
             <li><a href="#">APIs REST</a></li>
@@ -26,5 +30,8 @@
         </ul>
 </div>
 
-</body>
-</html>
+<?php
+
+include("rodape.php");
+
+?>

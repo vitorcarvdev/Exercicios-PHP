@@ -51,31 +51,40 @@ strong, b{
 p, ul, ol{margin-bottom: 20px;}
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #000000;
+    color: #000000; font-size: 15px
     opacity: 1; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #000000;
+    color: #000000; font-size: 15px
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #000000;
+    color: #000000; font-size: 15px
   }
+
+  input, select{padding:10px; font-size: 15px; margin-bottom: 10px;}
 
 
 /* ================== Fim do Reset CSS ================== */
 
 body{background: #333;}
-#conteudo{width: 88%; background: #fff; padding:4%; border-radius: 10px; margin:2%;}
+#conteudo{width: 88%; background: #fff; padding:4%; border-radius: 10px; margin:2% 2% 1% 2%;}
 
 #conteudo h1{text-align: center; font-size: 26px; font-weight: bold; text-transform: uppercase;}
 #conteudo p{text-align: center; margin-top:10px; }
 #conteudo a{text-decoration: underline; color:#333;}
 
 #menu{ text-align:center;}
-#menu li{margin:0 auto 10px; padding:10px; min-width: 30%; background:rgb(55, 3, 151); width: 60%;}
+#menu li{margin:0 auto 5px; padding:5px; min-width: 30%; background:rgb(55, 3, 151); width: 60%; border-radius: 10px; }
+#menu li:hover{background:rgb(63, 4, 172);}
 #menu li a{text-decoration: none; color:#fff;}
+
+#rodape{text-align: center; color:#fff; font-size: 13px; margin-bottom: 20px; text-transform: uppercase;}
 
 #faixa-exercicio{width: 96%; border-radius: 20px; background:#eee; padding:2%; }
 #faixa-resultado{width: 50%; border-radius: 20px; background:rgb(55, 3, 151); padding: 10px;}
+
+@media only screen and (max-width: 700px) {
+  #menu li{width: 100%;}
+}
