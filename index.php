@@ -19,7 +19,7 @@
             <li><a href="calculadora.php">Calculadora</a></li>
             <li><a href="lojatintas.php">Loja de Tintas</a></li>
             <li><a href="#">Loja de Tintas</a></li>
-            <li><a href="#">Conversor de Dolar</a></li>
+            <li><a href="#">Joja de Pisos</a></li>
             <li><a href="#">Agenda de contato (Nome e tel)</a></li>
             <li><a href="#">Autenticação de usuários</a></li>
             <li><a href="#">APIs REST</a></li>

@@ -36,27 +36,30 @@
     $MTdaArea = $_POST['MTdaarea'] ?? null;
     $vrdaLata = $_POST['vrdalata'] ?? null;
     $ltdaLata = $_POST['ltdalata'] ?? null;
-    $quantDemao = $_POST['quantDemao'] ?? null;
+    $quantdeDemao = $_POST['quantdemao'];
 
-    $PorcErro = 10;
+    $PorcErro = 10; // acrescimo de (10%) de tinta
 
     if($MTdaArea == 0.0){
+        $ltdaLata = 0;
         $QuantLatas = 0;
+        
     } else{
         $QuantLatas = $MTdaArea/$ltdaLata;
-        $NumLatas = (int) $QuantLatas; // Transformou o numero em inteiro ao inves de quebrado
-        $QuantLatas10 = $NumLatas+($NumLatas / 100 * $PorcErro.'%');
-
+        $QuantLatas10 = $QuantLatas+($QuantLatas / 100 * $PorcErro.'%');
         $NumLatasFinal = (int)$QuantLatas10;
-        
-        #$valorTotal = $NumLatasFinal*$vrdaLata;
-        #$valorTotalComDemaos = $valorTotal*$quantDemao;  
+        $quantdeDemao = (int)$quantdeDemao;
+
+        $valorTotal = $NumLatasFinal*$vrdaLata;
+        $valorTotalComDemaos = $valorTotal*$quantdeDemao;
+        $valorTotalComDemaos = number_format($valorTotalComDemaos, 2, ',', '.');
         #echo $valorTotalComDemaos;
     }
 
     ?>
+   
     
-<p><a href="https://www.php.net/manual/en/index.php" target="_blank">Manual do PHP</a> | <a href="index.php">Voltar para o Início</a></p>
+<p><a href="https://www.php.net/manual/en/index.php" target="_blank">Manual do PHP</a> | <a href="index.php">Voltar para o Início</a> | <a href="lojatintas.php">Refazer</a></p>
 
     <div id="faixa-exercicio">
         <form id="form-caculadora" method="post" style="text-align:center;">
@@ -70,7 +73,7 @@
         </form>
 
         <div id="faixa-resultado"  style="text-align:center; color:#fff; margin:20px auto;">
-            É nessessário <?php echo $NumLatasFinal; ?> latas para pintar esta área<br/> Incluso 10% a mais que o calculado de tinta para ter uma sobra<br/>Valor total: 
+            É nessessário <?php echo $NumLatasFinal; ?> latas para pintar esta área e já incluimos 10% a mais que o necessário de tinta para ter uma sobra<br/>Valor total: <?php echo 'R$'.$valorTotalComDemaos; ?> 
         </div>
     </div>    
 </div>

@@ -33,7 +33,7 @@
 <div id="conteudo">
     <h1>Calculadora Online</h1>
 
-    <p>Olá, estou disponibilizando esta calculadora online para que você possa usar gratuitamente</br> em caso de melhorias por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/><br/> <a href="https://www.php.net/manual/en/index.php" target="_blank">Manual do PHP</a> | <a href="index.php">Voltar para o Início</a></p>
+    <p>Olá, estou disponibilizando esta calculadora online para que você possa usar gratuitamente</br> em caso de melhorias por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/><br/> <a href="https://www.php.net/manual/en/index.php" target="_blank">Manual do PHP</a> | <a href="index.php">Voltar para o Início</a> | <a href="calculadora.php">Refazer</a></p>
 
     <div id="faixa-exercicio">
         <form id="form-caculadora" method="post" style="text-align:center;">
