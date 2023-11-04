@@ -11,7 +11,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input, select{
     margin: 0;
     padding: 0;
     border: 0;
@@ -63,7 +63,8 @@ p, ul, ol{margin-bottom: 20px;}
     color: #000000; font-size: 15px
   }
 
-  input, select{padding:10px; font-size: 15px; margin-bottom: 10px;}
+  input{width:96%; padding:1% 2%; font-size: 15px; margin-bottom: 10px; border:1px solid #ccc;}
+  input[type="submit"]{width:100%; padding:2%; font-size: 15px; margin-bottom: 10px; background:#0ab99c; border:1px solid #ccc;} 
 
 
 /* ================== Fim do Reset CSS ================== */
@@ -82,9 +83,12 @@ body{background: #333;}
 
 #rodape{text-align: center; color:#fff; font-size: 13px; margin-bottom: 20px; text-transform: uppercase;}
 
-#faixa-exercicio{width: 96%; border-radius: 20px; background:#eee; padding:2%; }
-#faixa-resultado{width: 50%; border-radius: 20px; background:rgb(55, 3, 151); padding: 10px;}
+#form-caculadora{max-width: 700px; margin:0 auto !important;} 
+#form-caculadora #operacoes {width: 130px; padding: 2%; margin-bottom: 10px; border:1px solid #ccc;}
 
-@media only screen and (max-width: 700px) {
+#faixa-exercicio{width: 96%; border-radius: 20px; background:#eee; padding:2%; }
+#faixa-resultado{width: 90%; border-radius: 20px; background:rgb(55, 3, 151); padding: 10px;}
+
+@media only screen and (max-width: 700px){
   #menu li{width: 100%;}
 }

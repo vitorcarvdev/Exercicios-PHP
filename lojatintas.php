@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora</title>
+<title>Cálculo de tinta por metro quadrado</title>
 <meta name="keywords" content="Calculo de tinta, tinta por metro quadrado, online">
 <script src="js/script.js"></script>
 <link rel="stylesheet" type="text/css" href="styles/style.css" />
@@ -16,20 +16,26 @@
 ?>
 
 <div id="conteudo">
-    <h1>Calculo de uso de tinta por metro quadrado</h1>
+    <h1>Cálculo de uso de tinta por metro quadrado</h1>
 
-    <p>Olá, estou disponibilizando este sistema online para lojas de tintas com o objetivo de calcular a quantidade de tinta por metros quadrados, você possa usar gratuitamente em caso de melhorias por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/></p>
+    <p>Olá, estou disponibilizando este sistema online com o objetivo de calcular a quantidade de tinta por metros quadrados, em caso de sugestões por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/></p>
     
-    <!-- 1 litro pinta = 6 metros
-    18L pinta - 108 m2
-    1,6 pinta - 21,6 m2
+    <!-- 
+    
+    ## Veja como funciona ##
 
-    Exemplo:
-    200 m2 = 200 / 6 = 33,33 litros + 10% para sobrar um pouco de tinta
+    1 litro de tinta pinta = 6M²
+    Uma lata com 18L pintaria - 108M²
+    Uma lata com 1,6 pintaria - 21,6M²
 
-    Tinta
-    33,3 / 18L = 1,85 latas (arredondar para cima = 2) 2 * R$80 = 160
-    33,3 / 3,6 = 9,25 latas (arredondar para cima = 10) 10 * R$25 = 250 -->
+    ## Exemplo pratico ##
+    200M² / 6M² (que é a area de tinta para 1 litro) = 33,33 litros necessarios para pintar os 200M²
+
+    ## Calculo considerando latas de 18 e 3,6 litros ##
+    33,3 / 18L = 1,85 latas (arredondando para cima = 2 latas de 18 litros) 2 * R$80 (valor de cada lata) = R$160
+    33,3 / 3,6 = 9,25 latas (arredondar para cima = 10 latas de 3,6 litros) 10 * R$25 (valor de cada lata) = R$250
+
+    -->
 
     <?php 
 
@@ -63,17 +69,16 @@
 
     <div id="faixa-exercicio">
         <form id="form-caculadora" method="post" style="text-align:center;">
-
+            <p>Use apenas numeros</p>
             <input name="MTdaarea" type="text" placeholder="Tamanho em M² da Área" /><br/>
-            <p>Informações da tinta</p>
-            <input name="vrdalata" type="text" placeholder="Valor da lata" /><br/>
+            <input name="vrdalata" type="text" placeholder="Valor da lata de tinta" /><br/>
             <input name="ltdalata" type="text" placeholder="Quantidade de litros na lata" /><br/>
             <input name="quantdemao" type="text" placeholder="Quantidade de demãos" /><br/>
             <input type="submit" value="Mostrar Resultado" /><br/>
         </form>
 
         <div id="faixa-resultado"  style="text-align:center; color:#fff; margin:20px auto;">
-            É nessessário <?php echo $NumLatasFinal; ?> latas para pintar esta área e já incluimos 10% a mais que o necessário de tinta para ter uma sobra<br/>Valor total: <?php echo 'R$'.$valorTotalComDemaos; ?> 
+            Você precisará de <?php echo $NumLatasFinal; ?> latas. Incluimos 10% a mais que o necessário de tinta para ter uma sobra.<br/>O valor total a pagar é de: <?php echo 'R$'.$valorTotalComDemaos; ?> 
         </div>
     </div>    
 </div>
