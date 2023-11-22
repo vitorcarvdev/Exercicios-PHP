@@ -1,4 +1,4 @@
-html{scroll-behavior: smooth;}
+form-caculadorahtml{scroll-behavior: smooth;}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,40 +18,27 @@ time, mark, audio, video, input, select{
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-/* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset for older browsers*/
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
     line-height: 1;
-		font-family:Arial, Helvetica, sans-serif;
-		font-size:17px; 
-		line-height: 1.5em;
+    font-family: 'Ubuntu', sans-serif;
+	font-size:17px; 
 }
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-strong, b{
-  font-weight: 900;
-}
+
 p, ul, ol{margin-bottom: 20px;}
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #000000; font-size: 15px
+    color: #000000; 
+    font-size: 15px;
     opacity: 1; /* Firefox */
   }
   
@@ -63,14 +50,15 @@ p, ul, ol{margin-bottom: 20px;}
     color: #000000; font-size: 15px
   }
 
-  input{width:96%; padding:1% 2%; font-size: 15px; margin-bottom: 10px; border:1px solid #ccc;}
-  input[type="submit"]{width:100%; padding:2%; font-size: 15px; margin-bottom: 10px; background:#0ab99c; border:1px solid #ccc;} 
+input{padding:1% 2%; font-size: 15px; margin-bottom: 10px; border:1px solid #ccc;}
+select{padding:1% 2%; font-size: 15px; margin-bottom: 10px; border:1px solid #ccc;}
+input[type="submit"]{padding:1% 2%; font-size: 15px; margin-bottom: 10px; background:#0ab99c; border:0;} 
 
 
 /* ================== Fim do Reset CSS ================== */
 
-body{background: #333;}
-#conteudo{width: 88%; background: #fff; padding:4%; border-radius: 10px; margin:2% 2% 1% 2%;}
+body{background: #333; font-family: 'Ubuntu', sans-serif;}
+#conteudo{width: 88%; background: #fff; padding:2% 4% 1% 4%; border-radius: 10px; margin:2% 2% 1% 2%;}
 
 #conteudo h1{text-align: center; font-size: 26px; font-weight: bold; text-transform: uppercase;}
 #conteudo p{text-align: center; margin-top:10px; }
@@ -79,16 +67,34 @@ body{background: #333;}
 #menu{ text-align:center;}
 #menu li{margin:0 auto 5px; padding:5px; min-width: 30%; background:rgb(55, 3, 151); width: 60%; border-radius: 10px; }
 #menu li:hover{background:rgb(63, 4, 172);}
-#menu li a{text-decoration: none; color:#fff;}
+#menu li a{text-decoration: none; color:#fff;} 
 
 #rodape{text-align: center; color:#fff; font-size: 13px; margin-bottom: 20px; text-transform: uppercase;}
 
 #form-caculadora{max-width: 700px; margin:0 auto !important;} 
-#form-caculadora #operacoes {width: 130px; padding: 2%; margin-bottom: 10px; border:1px solid #ccc;}
+#form-caculadora input[type=text]{width:20% !important; border:1px solid #ccc;}
+#form-caculadora input[type="submit"]{ width:70% !important; }
+#form-caculadora select{width:20% !important; }
 
-#faixa-exercicio{width: 96%; border-radius: 20px; background:#eee; padding:2%; }
-#faixa-resultado{width: 90%; border-radius: 20px; background:rgb(55, 3, 151); padding: 10px;}
+#form-vitor{max-width: 700px; margin:0 auto !important;} 
+.form-padrao input[type=text]{width:66% !important; border:1px solid #ccc;}
+.form-padrao input[type=password]{width:66% !important; border:1px solid #ccc;}
+.form-padrao input[type="submit"]{width:70% !important;}
+
+#faixa-exercicio{width: 96%; border-radius: 20px; background:#eee; padding:2% 2% 1%; }
+#faixa-resultado{width: 70%;  background:rgb(55, 3, 151); padding: 10px;}
+#faixa-resultado a, #faixa-resultado small a{color:#fff;}
 
 @media only screen and (max-width: 700px){
-  #menu li{width: 100%;}
+    #menu li{width: 100%;}
+    #conteudo{padding:4% 4% 1% 4%; }
+    
+    #faixa-exercicio{padding:6% 2% 1%; }
+    
+    #form-caculadora{width:100%; max-width: 700px; margin:0 auto !important;} 
+    #form-caculadora input[type=text]{width:90% !important; border:1px solid #ccc;}
+    .form-padrao input[type=password]{width:90% !important; border:1px solid #ccc;}
+    #form-caculadora select{padding:1.3% 2%; border:1px solid #ccc;  width:94% !important; font-size: 15px !important; margin-bottom:10px;}
+    #form-caculadora input[type="submit"]{width:94% !important;}
+    #faixa-resultado{width: 90%;}
 }

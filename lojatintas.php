@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cálculo de tinta por metro quadrado</title>
-<meta name="keywords" content="Calculo de tinta, tinta por metro quadrado, online">
+<meta name="keywords" content="Calculo de tinta, tinta por metro quadrado, online,calculadora de m2, metro quadrado">
 <script src="js/script.js"></script>
 <link rel="stylesheet" type="text/css" href="styles/style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<?php
+<?php 
 
 ?>
 
@@ -68,7 +71,7 @@
 <p><a href="https://www.php.net/manual/en/index.php" target="_blank">Manual do PHP</a> | <a href="index.php">Voltar para o Início</a> | <a href="lojatintas.php">Refazer</a></p>
 
     <div id="faixa-exercicio">
-        <form id="form-caculadora" method="post" style="text-align:center;">
+        <form id="form-vitor" class="form-padrao loja" method="post" style="text-align:center;">
             <p>Use apenas numeros</p>
             <input name="MTdaarea" type="text" placeholder="Tamanho em M² da Área" /><br/>
             <input name="vrdalata" type="text" placeholder="Valor da lata de tinta" /><br/>
