@@ -10,8 +10,6 @@ include('conexao.php');
             echo " - <small><i>Preencha a senha</i></small>";
         }
         else{
-            
-            
             $loginNome = $mysqli->real_escape_string($_POST['uadm']); // real_escape_string faz a segurança para o campo nao ser rackeado
             $senha = $mysqli->real_escape_string($_POST['sadm']);
 
@@ -44,22 +42,19 @@ include('conexao.php');
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="js/script.js"></script>
-<link rel="stylesheet" type="text/css" href="styles/style.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<?php include("head.php"); ?>
 <title>Autenticação de usuário PHP para uma área restrita</title>
 <meta name="keywords" content="Calculo de piso, piso por metro quadrado, online, calculadora de m2, metro quadrado">
 </head>
-
 <body>
-<div id="conteudo">
-    <h1>Autenticação de usuário PHP para uma área restrita</h1>
 
-    <p>Olá, estou disponibilizando este sistema online com o objetivo de mostrar o funcionamento de uma área restrata apenas a usuarios com login e senha, em caso de sugestões por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/></p>
+<div id="conteudo"class="container row align-items-center">
+    
+    <div class="col">
+        <h1>Autenticação de usuário PHP</h1>
+        <p>Olá, estou disponibilizando este sistema online com o objetivo de mostrar o funcionamento de uma área restrata apenas a usuarios com login e senha, em caso de sugestões por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/></p>
+        <p><a href="index.php">Voltar</a> | <a href="autenticacaousers.php">Refazer</a></p>
+    </div>
     
     <!-- 
     
@@ -68,25 +63,16 @@ include('conexao.php');
 
     -->
    
-    
-    <p><a href="https://www.php.net/manual/en/index.php" target="_blank">Manual do PHP</a> | <a href="index.php">Voltar para o Início</a> | <a href="autenticacaousers.php">Refazer</a></p>
-
+    <div class="col">
         <div id="faixa-exercicio">
-            <form id="form-vitor" class="form-padrao loja" method="post" style="text-align:center;">
-                <input name="uadm" type="text" placeholder="Usuário" /><br/>
-                <input name="sadm" type="password" placeholder="Senha" /><br/>
-                <input type="submit" value="Entrar" /><br/>
+            <p>Login e senha para acesso</p>
+            <form id="form-vitor" class="form-padrao loja" method="post" >
+                <input class="form-control" name="uadm" type="text" placeholder="Usuário" />
+                <input class="form-control" name="sadm" type="password" placeholder="Senha" />
+                <input class="btn btn-primary" type="submit" value="Entrar" />
             </form>
-
-            <div id="faixa-resultado"  style="width:30% !important; text-align:center; color:#fff; margin:20px auto;">
-
-
-        </div>
-    </div>    
-</div>
+        </div>    
+    </div>
     
-
-    
-
 </body>
 </html>

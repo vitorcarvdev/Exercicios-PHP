@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include("head.php"); ?>
 <title>Calculadora</title>
 <meta name="keywords" content="calculadora simples online, calculadora online, colculadora responsiva">
-<script src="js/script.js"></script>
-<link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
-
 <body>
 
 <?php
@@ -30,26 +26,41 @@
       }
 ?>
 
-<div id="conteudo">
+<div id="conteudo"class="container row align-items-center">
+    
+    <div class="col">
     <h1>Calculadora Online</h1>
-
-    <p>Olá, estou disponibilizando esta calculadora online para que você possa usar gratuitamente</br> em caso de melhorias por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/><br/> <a href="https://www.php.net/manual/en/index.php" target="_blank">Manual do PHP</a> | <a href="index.php">Voltar para o Início</a> | <a href="calculadora.php">Refazer</a></p>
-
-    <div id="faixa-exercicio">
-        <form id="form-caculadora" method="post" style="text-align:center;">
-            <input name="PrimeiroNum" type="text" placeholder="Escolha um numero" />
-            <select name="operacoes" id="operacoes">
-            <option value="oper">Operador</option>
-                <option value="soma">+</option>
-                <option value="subtracao">-</option>
-                <option value="multiplicacao">*</option>
-                <option value="divisao">/</option>
-            </select>
-            <input name="SegundoNum" type="text" placeholder="Outro um numero" />
-            <input type="submit" value="Mostrar Resultado" />
+    <p>Olá, estou disponibilizando esta calculadora online para que você possa usar gratuitamente em caso de melhorias por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/><br/><a href="index.php">Voltar</a> | <a href="calculadora.php">Refazer</a></p>
+    </div>
+    
+    <div id="faixa-exercicio" class="col">
+        
+        <form method="post" style="margin: 0 auto; text-align:center;">
+            
+            <label class="col-12">
+                <input name="PrimeiroNum" class="form-control" type="text" placeholder="Escolha um numero" />
+            </label>
+            
+            <label class="col-2">
+                <select name="operacoes" class="form-control" id="operacoes" style="text-align:center;">
+                    <option value="soma">+</option>
+                    <option value="subtracao">-</option>
+                    <option value="multiplicacao">*</option>
+                    <option value="divisao">/</option>
+                </select>
+            </label>
+            
+            <label class="col-12" >
+                <input name="SegundoNum" class="form-control" type="text" placeholder="Outro um numero" />
+            </label>
+            
+            <label class="col-12" >
+                <input type="submit" class="btn btn-primary" value="Mostrar Resultado" style="width:100%;"/>
+            </label>
+            
         </form>
 
-        <div id="faixa-resultado"  style="text-align:center; color:#fff; margin:20px auto;">
+        <div id="faixa-resultado">
             <?php echo "O resultado da " . $NumOperacoes . " é = " . $Resultado; ?>
         </div>
     </div>    

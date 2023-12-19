@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include("head.php"); ?>
 <title>Cálculo de pisos por metro quadrado</title>
 <meta name="keywords" content="Calculo de piso, piso por metro quadrado, online, calculadora de m2, metro quadrado">
-<script src="js/script.js"></script>
-<link rel="stylesheet" type="text/css" href="styles/style.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<?php
 
-?>
-
-<div id="conteudo">
-    <h1>Cálculo de uso de pisos por metro quadrado</h1>
-
-    <p>Olá, estou disponibilizando este sistema online com o objetivo de calcular a quantidade de pisos por metros quadrados, em caso de sugestões por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/></p>
+<div id="conteudo"class="container row align-items-center">
+    
+    <div class="col">
+        <h1>Cálculo de uso de pisos por metro quadrado</h1>
+        <p>Olá, estou disponibilizando este sistema online com o objetivo de calcular a quantidade de pisos por metros quadrados, em caso de sugestões por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/></p>
+        <p><a href="index.php">Voltar</a> | <a href="lojapisos.php">Refazer</a></p>
+    </div>
     
     <!-- 
     
@@ -65,22 +58,24 @@
 
     ?>
    
+    <div class="col">
+        
+        <div id="faixa-exercicio">
+            <form id="form-vitor" class="form-padrao loja" method="post" style="text-align:center;">
+                <p>Use apenas numeros</p>
+                <input class="form-control" name="MTdaarea" type="text" placeholder="Tamanho em M² da Área" />
+                <input class="form-control" name="vrdopiso" type="text" placeholder="Valor M² do piso" />
+                <input class="form-control" name="vrargamassa" type="text" placeholder="Valor argamassa 5kg" />
+                <input class="btn btn-primary" type="submit" value="Mostrar Resultado" />
+            </form>
     
-<p><a href="https://www.php.net/manual/en/index.php" target="_blank">Manual do PHP</a> | <a href="index.php">Voltar para o Início</a> | <a href="lojapisos.php">Refazer</a></p>
-
-    <div id="faixa-exercicio">
-        <form id="form-vitor" class="form-padrao loja" method="post" style="text-align:center;">
-            <p>Use apenas numeros</p>
-            <input name="MTdaarea" type="text" placeholder="Tamanho em M² da Área" /><br/>
-            <input name="vrdopiso" type="text" placeholder="Valor M² do piso" /><br/>
-            <input name="vrargamassa" type="text" placeholder="Valor argamassa 5kg" /><br/>
-            <input type="submit" value="Mostrar Resultado" /><br/>
-        </form>
-
-        <div id="faixa-resultado"  style="text-align:center; color:#fff; margin:20px auto;">
-            Você precisará de <?php echo $QuantPisosFinal; ?> caixas de piso. Incluimos 10% a mais que o necessário para ter uma sobra.<br/>O valor total a pagar é de: <?php echo 'R$'.$valorTotal; ?>. Se incluir a argamassa o valor total é de: <?php echo 'R$'.$valorTotalPisoArgamassa; ?>  
+            <div id="faixa-resultado" style="text-align:center;">
+                Você precisará de <small style="color:red;"><?php echo $QuantPisosFinal; ?></small> caixas de piso. Incluimos 10% a mais.<br/>O valor total a pagar é de: <small style="color:red;"><?php echo 'R$'.$valorTotal; ?></small>. Se incluir a argamassa o total é: <small style="color:red;"><?php echo 'R$'.$valorTotalPisoArgamassa; ?></small> 
+            </div>
         </div>
-    </div>    
+        
+    </div>
+    
 </div>
 </body>
 </html>
