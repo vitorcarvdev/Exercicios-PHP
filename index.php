@@ -31,6 +31,8 @@
             <li class="col-6 btn btn-secondary"><a href="#">Projeto netflix</a></li>
             <li class="col-6 btn btn-secondary"><a href="#">Projeto facebook</a></li>
             <li class="col-6 btn btn-secondary"><a href="#">Projeto Site administravel</a></li>
+            <li class="col-6 btn btn-secondary"><a href="#">Calculo IMC</a></li>
+            <li class="col-6 btn btn-secondary"><a href="#">Percentual de gordura</a></li>
         </ul>
     </div>
     
