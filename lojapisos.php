@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <?php include("head.php"); ?>
-<title>Cálculo de pisos por metro quadrado</title>
+<title>Cálculo de compra de pisos por metro quadrado (M²)</title>
 <meta name="keywords" content="Calculo de piso, piso por metro quadrado, online, calculadora de m2, metro quadrado">
 </head>
 <body>
@@ -11,7 +11,7 @@
 <div id="conteudo"class="container row align-items-center">
     
     <div class="col">
-        <h1>Cálculo de uso de pisos por metro quadrado</h1>
+        <h1>Cálculo de compra de pisos por M²</h1>
         <p>Olá, estou disponibilizando este sistema online com o objetivo de calcular a quantidade de pisos por metros quadrados, em caso de sugestões por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/></p>
         <p><a href="index.php">Voltar</a> | <a href="lojapisos.php">Refazer</a></p>
     </div>

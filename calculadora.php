@@ -30,7 +30,7 @@
     
     <div class="col">
     <h1>Calculadora Online</h1>
-    <p>Olá, estou disponibilizando esta calculadora online para que você possa usar gratuitamente em caso de melhorias por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/><br/><a href="index.php">Voltar</a> | <a href="calculadora.php">Refazer</a></p>
+    <p>Olá, estou disponibilizando esta calculadora online para que você possa usar gratuitamente em caso sugestões envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/><br/><a href="index.php">Voltar</a> | <a href="calculadora.php">Refazer</a></p>
     </div>
     
     <div id="faixa-exercicio" class="col">

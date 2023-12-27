@@ -11,15 +11,15 @@
     
     <div class="col">
         <h1>Gerador de Senhas</h1>
-        <p>Olá, estou disponibilizando este sistema online com o objetivo de gerar um link facil para whatsapp, em caso de sugestões por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/></p>
+        <p>Olá, estou disponibilizando este sistema online com o objetivo de gerar senhas fortes, em caso de sugestões envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/></p>
         <p><a href="index.php">Voltar</a> | <a href="geradorsenhas.php">Refazer</a></p>
     </div>
     
     <div class="col">
     <div id="faixa-exercicio">
         <form id="form-vitor" class="form-padrao loja" method="post" style="text-align:center;">
-            <p>Deseja uma senha de quantos caracteres?</p>
-            <input class="form-control"  name="NCaracteres" type="text" value="12" /><br/>
+            <p>Gerar uma senha de quantos caracteres?</p>
+            <input class="form-control"  name="NCaracteres" type="text" value="20" /><br/>
             <input type="submit" class="btn btn-primary" value="Gerar Senha" /><br/>
         </form>
 
