@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <?php include("head.php"); ?>
-<title>Sistema online de nota para alunos</title>
+<title>Sistema online de boletim com notas de alunos</title>
 <meta name="keywords" content="sistema para professores, calculo de nota média para alunos, sistema de notas com envio pelo Whatsapp, media de notas pelo whatsapp, sistema online de nota">
 </head>
 <body>
@@ -10,7 +10,7 @@
 <div id="conteudo"class="container row align-items-center">
     
     <div class="col">
-        <h1>Sistema online de nota para alunos</h1>
+        <h1>Sistema online de boletim com notas de alunos</h1>
         <p>Estou disponibilizando um sistema para auxiliar professores a calcular notas médias de seus alunos e enviar por whatsapp, em caso de sugestões por favor envie para <a href="mailto:programador@vitorcarvalho.dev.br">programador@vitorcarvalho.dev.br</a><br/></p>
         <p><a href="index.php">Voltar</a> | <a href="sistema-notas-aluno.php">Refazer</a></p>
     </div>
@@ -18,35 +18,24 @@
     <!-- 
     ## Veja como funciona ##
 
-    
+    O professor escolhe quantas materias estão sendo avaliadas ex: (portugues, matematica, historia) 3
+
+    Escreve o nome das materias seguido da nota do aluno, o sistema fará uma média de todos e enviará o resultado para aluno via whatsapp em uma mensagem como esta:
+
+    Olá aluno: $nomedoaluno
+
+    Este é o resultado do seu boletim:
+
+    Portugues: 8,7
+    Matematica: 8,7
+    historia: 8,7
+
+    Nota média: 8,7
+
+    Parabéns pelo resultado continue assim
+    Atenciosamente: Professor XX
+
     -->
-
-    <?php
-    /*
-    $MTdaArea = $_POST['MTdaarea'] ?? null;
-    $vrdaLata = $_POST['vrdalata'] ?? null;
-    $ltdaLata = $_POST['ltdalata'] ?? null;
-    $quantdeDemao = $_POST['quantdemao'];
-
-    $PorcErro = 10; // acrescimo de (10%) de tinta
-
-    if($MTdaArea == 0.0){
-        $ltdaLata = 0;
-        $QuantLatas = 0;
-        
-    } else{
-        $QuantLatas = $MTdaArea/$ltdaLata;
-        $QuantLatas10 = $QuantLatas+($QuantLatas / 100 * $PorcErro.'%');
-        $NumLatasFinal = (int)$QuantLatas10;
-        $quantdeDemao = (int)$quantdeDemao;
-
-        $valorTotal = $NumLatasFinal*$vrdaLata;
-        $valorTotalComDemaos = $valorTotal*$quantdeDemao;
-        $valorTotalComDemaos = number_format($valorTotalComDemaos, 2, ',', '.');
-        #echo $valorTotalComDemaos;
-    }
-    */
-    ?>
 
     <div class="col row">
         
@@ -95,9 +84,7 @@
     
             <div id="faixa-resultado"  style="text-align:center;">
                 <?php
-                    
-
-
+                    // resultado do boletim aparecerá aqui
                 ?>
             </div>
             
