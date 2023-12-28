@@ -85,6 +85,16 @@
             <div id="faixa-resultado"  style="text-align:center;">
                 <?php
                     // resultado do boletim aparecerá aqui
+                    /*
+                    $qntmater = $_GET["qntmater"];
+
+                    $i = 1;
+                    while($i <= $qntmater)
+                    {
+                        $mat$i = $_GET["qntmater$i"];
+                        $i++; 
+                    }
+                    */
                 ?>
             </div>
             
