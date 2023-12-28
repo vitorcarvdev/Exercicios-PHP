@@ -22,7 +22,7 @@
     -->
 
     <?php
-    
+    /*
     $MTdaArea = $_POST['MTdaarea'] ?? null;
     $vrdaLata = $_POST['vrdalata'] ?? null;
     $ltdaLata = $_POST['ltdalata'] ?? null;
@@ -45,23 +45,60 @@
         $valorTotalComDemaos = number_format($valorTotalComDemaos, 2, ',', '.');
         #echo $valorTotalComDemaos;
     }
-
+    */
     ?>
 
-    <div class="col">
+    <div class="col row">
         
         <div id="faixa-exercicio">
-            <form id="form-vitor" class="form-padrao loja" method="post" style="text-align:center;">
-                <p>Use apenas numeros</p>
-                <input class="form-control" name="MTdaarea" type="text" placeholder="Tamanho em M² da Área" />
-                <input class="form-control" name="vrdalata" type="text" placeholder="Valor da lata de tinta" />
-                <input class="form-control" name="ltdalata" type="text" placeholder="Quantidade de litros na lata" />
-                <input class="form-control" name="quantdemao" type="text" placeholder="Quantidade de demãos" />
-                <input class="btn btn-primary" type="submit" value="Mostrar Resultado" />
+            <form id="form-vitor" class="form-padrao loja" method="GET" style="text-align:center;">
+
+                <p><b>Matérias e Notas</b></p>
+
+                <div class="col-12">
+                    <input class="form-control" name="qntmater" type="number" placeholder="Quantidade de Máterias" />
+                    <input class="btn btn-primary" type="submit" value="Gerar Materias" />
+                </div>
+
+                    <?php
+                    $qntmater = $_GET["qntmater"];
+
+                    $i = 1;
+                    while($i <= $qntmater)
+                    {
+                        echo "
+                        <div class='col-6'>
+                            <input class='form-control' name='mat$i' type='text' placeholder='Materia' />
+                        </div>
+                        <div class='col-6'>
+                            <input class='form-control' name='nota$i' type='text' placeholder='Nota' />
+                        </div>
+                        ";
+                        $i++; 
+                    }
+                    
+                ?>
+
+                <p><b>Dados do aluno</b></p>
+                
+                <div class="col-6">
+                    <input class="form-control" name="nomealuno" type="text" placeholder="Nome" />
+                </div>
+
+                <div class="col-6">
+                    <input class="form-control" name="whatsapp" type="text" placeholder="Whatsapp" />
+                </div>
+
+                <input class="btn btn-primary col-6" type="submit" value="Mostrar Resultado" />
+                <input class="btn btn-success col-6" type="submit" value="Enviar pelo Whatsapp" />
             </form>
     
             <div id="faixa-resultado"  style="text-align:center;">
-                Você precisará de <small style="color:red;"><?php echo $NumLatasFinal; ?></small> latas. Incluimos 10% a mais.<br/>O valor total a pagar é de: <small style="color:red;"><?php echo 'R$'.$valorTotalComDemaos; ?></div>
+                <?php
+                    
+
+
+                ?>
             </div>
             
         </div>

@@ -16,12 +16,12 @@
     
     <div class="col-8">
         <ul id="menu">
-            <li class="col-6 btn btn btn-success"><a href="calculadora.php">Calculadora Comum</a></li>
-            <li class="col-6 btn btn btn-success"><a href="lojatintas.php">Loja de Tintas</a></li>
-            <li class="col-6 btn btn btn-success"><a href="lojapisos.php">Loja de Pisos</a></li>
-            <li class="col-6 btn btn btn-success"><a href="lkswhatsapp.php">Gerador de link WhatsApp</a></li>
+            <li class="col-6 btn btn-success"><a href="calculadora.php">Calculadora Comum</a></li>
+            <li class="col-6 btn btn-success"><a href="lojatintas.php">Loja de Tintas</a></li>
+            <li class="col-6 btn btn-success"><a href="lojapisos.php">Loja de Pisos</a></li>
+            <li class="col-6 btn btn-success"><a href="lkswhatsapp.php">Gerador de link WhatsApp</a></li>
             <li class="col-6 btn btn-success"><a href="geradorsenhas.php">Gerador de senhas online</a></li>
-            <li class="col-6 btn btn-secondary"><a href="#">Sistema de notas para aluno</a></li>
+            <li class="col-6 btn btn-success"><a href="sistema-notas-aluno.php">Sistema de notas para aluno</a></li>
             <li class="col-6 btn btn-secondary"><a href="#">Sistema de Pedidos Delivery</a></li>
             <li class="col-6 btn btn-secondary"><a href="#">Loja Virtual</a></li>
             <li class="col-6 btn btn-secondary"><a href="#">APIs (Aplicativo de clima)</a></li>
